@@ -4,10 +4,21 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
 
 h3 {
     font-size: 28px;
     font-weight: 600;
+    margin-bottom: 0;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 500;
     margin-bottom: 0;
 }
 

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasmu Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/common-operating-view.css" />
+</head>
+
+<body>
+    <div id="wrapper" class="toggled">
+        <aside id="sidebar-wrapper" class="px-2 py-3">
+            <div class="sidebar-brand text-start mb-4">
+                <a href="#" class="navbar-brand" id="sidebar-toggle">
+                    <img src="assets/images/logo-sidebar.png" alt="" />
+                </a>
+            </div>
+            <ul class="sidebar-nav p-0 m-0 list-unstyled">
+                <li class="active">
+                    <a href="#"
+                        class="d-flex align-items-center justify-content-start py-2 rounded-2 gap-4 text-white fw-bold text-nowrap"><i
+                            class="fa fa-home"></i>
+                        <span>Common Operating View</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="d-flex align-items-center justify-content-start py-2 rounded-2 gap-4 text-white fw-bold text-nowrap"><i
+                            class="fa fa-home"></i>
+                        <span>Business Intelligence Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="d-flex align-items-center justify-content-start py-2 rounded-2 gap-4 text-white fw-bold text-nowrap"><i
+                            class="fa fa-home"></i>
+                        <span>Smart Parking</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <section id="content-wrapper">
+            <div class="d-flex position-relative">
+                <div class="overlay-btns-wrapper position-absolute top-0 mt-3">
+                    <div class="dropdown">
+                        <a class="btn btn-primary dropdown-toggle rounded-0 me-3" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Katara - Level 1
+                        </a>
+
+                        <a class="btn btn-primary dropdown-toggle rounded-0" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            All Filters
+                        </a>
+
+                        <div class="dropdown-menu p-2 rounded-0">
+                            <div class="d-flex gap-4">
+                                <div class="column">
+                                    <div class="dropdown-items-heading mb-2 pb-2">
+                                        <h6 class="">Date</h6>
+                                    </div>
+                                    <ul class="p-0 m-0 list-unstyled d-flex flex-column gap-2">
+                                        <li>
+                                            <label for="">Start</label>
+                                            <input type="text" />
+                                        </li>
+                                        <li>
+                                            <label for="">End</label>
+                                            <input type="text" />
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="column">
+                                    <div class="dropdown-items-heading mb-2 pb-2">
+                                        <h6 class="">Time</h6>
+                                    </div>
+                                    <ul class="p-0 m-0 list-unstyled d-flex flex-column gap-2">
+                                        <li class="d-flex align-items-center gap-2">
+                                            <input type="checkbox" id="full-day" />
+                                            <label for="full-day">Full Day</label>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-2">
+                                            <input type="checkbox" id="day" />
+                                            <label for="day">Day</label>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-2">
+                                            <input type="checkbox" id="afternoon" />
+                                            <label for="afternoon">Afternoon</label>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="column">
+                                    <div class="dropdown-items-heading mb-2 pb-2">
+                                        <h6 class="text-nowrap">Time Interval</h6>
+                                    </div>
+                                    <ul class="p-0 m-0 list-unstyled d-flex flex-column gap-2">
+                                        <li class="d-flex align-items-center gap-2">
+                                            <input type="checkbox" id="real-time" />
+                                            <label for="real-time">Real Time</label>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-2">
+                                            <input type="checkbox" id="15-mins" />
+                                            <label for="15-mins">15 Mins</label>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-2">
+                                            <input type="checkbox" id="30-mins" />
+                                            <label for="30-mins">30 Mins</label>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-2">
+                                            <input type="checkbox" id="1-hour" />
+                                            <label for="1-hour">1 Hour</label>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="column">
+                                    <div class="dropdown-items-heading mb-2 pb-2">
+                                        <h6 class="">Target Population</h6>
+                                    </div>
+                                    <ul class="p-0 m-0 list-unstyled d-flex flex-column gap-2">
+                                        <li>
+                                            <label for="">Start</label>
+                                            <input type="text" />
+                                        </li>
+                                        <li>
+                                            <label for="">End</label>
+                                            <input type="text" />
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="side-btns position-absolute top-50 translate-middle-y shadow-lg">
+                    <a href="#" class="side-btns-icon">
+                        <img src="assets/images/pen.svg" class="w-100 h-100 object-fit-contain" alt="" />
+                    </a>
+                    <a href="#" class="side-btns-icon">
+                        <img src="assets/images/double-arrow.svg" class="w-100 h-100 object-fit-contain" alt="" />
+                    </a>
+                    <a href="#" class="side-btns-icon">
+                        <img src="assets/images/pause-play.svg" class="w-100 h-100 object-fit-contain" alt="" />
+                    </a>
+                    <a href="#" class="side-btns-icon">
+                        <img src="assets/images/enter-exit.svg" class="w-100 h-100 object-fit-contain" alt="" />
+                    </a>
+                </div>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.1408170069312!2d68.34638577492206!3d25.36659662481938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c7153cbf49ea7%3A0xd67034353f6c5595!2sTechriv%20Solutions!5e0!3m2!1sen!2s!4v1694758147060!5m2!1sen!2s"
+                    width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="map-iframe"></iframe>
+
+
+            </div>
+        </section>
+
+        <div class="right-sidebar position-fixed end-0 top-0 border border-danger">
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

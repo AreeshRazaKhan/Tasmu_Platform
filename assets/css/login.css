@@ -22,3 +22,9 @@
     border: none;
     font-size: 14px;
 }
+
+@media (max-width: 991.97px) {
+    .login-form-section {
+        height: 100%;
+    }
+}
